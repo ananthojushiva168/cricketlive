@@ -1,0 +1,81 @@
+.background{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5%;
+    height: 360px;
+    width: 460px;
+    text-align: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 50%) 0px 54px 55px, rgba(0, 0, 0, 50%) 0px -12px 30px, rgba(0, 0, 0, 50%) 0px 4px 6px, rgba(0, 0, 0, 50%) 0px 12px 13px, rgba(0, 0, 0, 50%) 0px -3px 5px;
+}
+.items{
+    margin: 2%;
+}
+
+.loading{
+    margin-top: 15%;
+    font-size: 80px;
+}
+
+.card{
+    width:18rem;
+}
+
+.img-box{
+    height: 67px;
+    width: 76px;
+}
+
+.photo-box{
+    border: 5px solid blue;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("../images/IPLlogo.png"); */
+}
+.image-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+}
+@media (max-width: 600px){
+   .photo-box{
+    height: auto;
+    width: 300px;
+   } 
+}
+.main-box:hover{
+    transform: scale(1.2);
+}
+.photo-box:hover{
+    border: 5px solid red;
+    transition: border 2s;
+}
+p{
+    padding-bottom: 5px;
+    margin-bottom: 2%;
+}
+@media (max-width:360px) {
+    .photo-box{
+        height: auto;
+        width: 280px;
+        padding-left: 0;
+        padding-right: 0;
+       }
+       .main-box{
+        margin: 0;
+        margin-top: 10px;
+       }
+}
